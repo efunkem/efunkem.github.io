@@ -22,7 +22,7 @@ function getAmount(){
 function sendIgnis(nodeurl, amountNQT, recipient, passphrase){
 
   if(document.getElementById("yourAccount").value == ""){
-  	alert("You must enter an Ardor ID!");
+  	alert("You must enter an Ardor Account!");
   };
 
   const publicKey = ardorjs.secretPhraseToPublicKey(passphrase);
