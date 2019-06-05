@@ -1,0 +1,16 @@
+{
+  "name": "cryptocrosswords",
+  "version": "1.0.0",
+  "description": "Project",
+  "main": "Home\\JS.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Eric",
+  "license": "ISC",
+  "dependencies": {
+    "ardorjs": "^0.1.1",
+    "axios": "^0.19.0",
+    "qs": "^6.7.0"
+  }
+}

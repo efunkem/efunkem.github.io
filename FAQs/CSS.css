@@ -1,0 +1,116 @@
+body {
+  margin: 2%;
+}
+
+.questions {
+	max-width: 500px;
+	margin: auto;
+}
+
+p {
+	margin-left: 1em;
+}
+
+.wrapper {
+  max-width: 500px;
+  margin: auto;
+  justify-content: center;
+  display: grid;
+  grid-gap: 0;
+  grid-template-columns: repeat(13, 1fr);
+  grid-template-rows: repeat(13, 1fr);
+  grid-auto-flow: row;
+}
+
+.box {
+  background-color: white;
+  border: solid black 1px;
+  padding: 0px;		
+}
+
+.orient { /*this should be retitled to cluenumber to be more accurate*/
+	font-size: 75%;
+	position: absolute;
+	padding-left: 0%;
+	padding-top: 0px;
+}
+
+input[type=text] {
+	font: 180% monaco, monospace;
+	width: 100%;
+	height: 10%;
+	text-align: right;
+	vertical-align: bottom;
+	border: 10px green;
+	margin: none;
+	text-transform:uppercase;
+	z-index: -1;
+	padding: 0;
+	/*outline:0;*/
+}
+
+#black {
+	background-color: black;
+}
+
+.clues {
+	max-width: 500px;
+	margin: auto;
+}
+
+.column {
+	float: left;
+	width: 50%;
+	padding: 10px;
+}
+
+.row:after {
+	content:"";
+	display: table;
+	clear: both;
+}
+
+h1 {
+	text-align: center;
+	font-size: 100px;
+	color: black;
+}
+
+#howtoplay {
+	padding: 5%;
+}
+
+h2 {
+	text-align: center;
+}
+
+button {
+	margin: 0 auto;
+}
+
+#entryform {
+	text-align: center;
+	max-width: 500px;
+	margin: auto;
+}
+
+#yourAccount {
+	text-align: center;
+	width: 95%;
+}
+
+#yourAccount::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  text-align: center;
+}
+
+#yourAccount::-moz-placeholder { /* Firefox 19+ */
+  text-align: center;
+}
+
+#yourAccount:-ms-input-placeholder { /* IE 10+ */
+  text-align: center;
+}
+
+#yourAccount:-moz-placeholder { /* Firefox 18- */
+  text-align: center;
+}
