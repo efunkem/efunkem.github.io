@@ -9,7 +9,7 @@ const config = {
   };
 
 function getAmount(){
-    axios.get("http://178.128.68.243:27876/nxt?requestType=getBalance&chain=1&account=ARDOR-2KDL-MLEX-2YQX-6978Z", config)
+    axios.get("https://cyptocrosswords.ml/nxt?requestType=getBalance&chain=1&account=ARDOR-2KDL-MLEX-2YQX-6978Z", config)
     .then(function(response){
         var rewardAmount = ((response.data.balanceNQT)/100000000).toFixed(0);
         if (rewardAmount <= 10){
