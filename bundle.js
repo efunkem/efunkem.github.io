@@ -22658,7 +22658,7 @@ document.getElementById("mybutton").onclick = function () {
 
   var yourAddress = document.getElementById("yourAccount").value
 
-	sendIgnis("http://178.128.68.243:27876/nxt", 100000000, yourAddress, passphrase);
+	sendIgnis("https://cyptocrosswords.ml/nxt", 100000000, yourAddress, passphrase);
 }
 },{"ardorjs":156,"axios":161,"qs":192}],156:[function(require,module,exports){
 (function() {
