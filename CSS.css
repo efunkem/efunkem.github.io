@@ -109,3 +109,7 @@ button {
 #mce-EMAIL {
 	width: 95%;
 }
+
+.ui.menu {
+	margin-top: 0px;
+}
