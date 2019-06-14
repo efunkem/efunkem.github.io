@@ -105,3 +105,7 @@ button {
 #yourAccount:-moz-placeholder { /* Firefox 18- */
   text-align: center;
 }
+
+#mc_embed_signup {
+	width:95%;
+}
