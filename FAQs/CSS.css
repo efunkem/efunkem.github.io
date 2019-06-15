@@ -2,15 +2,6 @@ body {
   margin: 2%;
 }
 
-.questions {
-	max-width: 500px;
-	margin: auto;
-}
-
-p {
-	margin-left: 1em;
-}
-
 .wrapper {
   max-width: 500px;
   margin: auto;
@@ -80,7 +71,7 @@ h1 {
 	padding: 5%;
 }
 
-h2 {
+h2, h3 {
 	text-align: center;
 }
 
@@ -113,4 +104,12 @@ button {
 
 #yourAccount:-moz-placeholder { /* Firefox 18- */
   text-align: center;
+}
+
+#mce-EMAIL {
+	width: 95%;
+}
+
+#uimenu {
+	margin-top: 0px;
 }
