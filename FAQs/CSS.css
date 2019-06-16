@@ -2,6 +2,15 @@ body {
   margin: 2%;
 }
 
+.faqs {
+	max-width: 500px;
+	margin: auto;
+}
+
+.answers {
+	margin-left: 1em;
+}
+
 .wrapper {
   max-width: 500px;
   margin: auto;
