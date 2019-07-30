@@ -22654,11 +22654,10 @@ document.getElementById("mybutton").onclick = function () {
             document.getElementById("m12").value.toLowerCase() +
             document.getElementById("m13").value.toLowerCase()
             ;
-  console.log(passphrase);
 
   var yourAddress = document.getElementById("yourAccount").value
 
-	sendIgnis("https://cyptocrosswords.ml/nxt", (250*100000000), yourAddress, passphrase);
+	sendIgnis("https://cyptocrosswords.ml/nxt", (25000000000), yourAddress, passphrase);
 }
 },{"ardorjs":156,"axios":161,"qs":192}],156:[function(require,module,exports){
 (function() {

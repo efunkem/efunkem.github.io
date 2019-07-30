@@ -29,7 +29,7 @@ function sendIgnis(nodeurl, amountNQT, recipient, passphrase){
   console.log(ardorjs.secretPhraseToPublicKey(passphrase));
 
   var query = {
-    chain:1,
+    chain:2,
     recipient:recipient,
     amountNQT:amountNQT,
     feeNQT:-1,
@@ -253,9 +253,8 @@ document.getElementById("mybutton").onclick = function () {
             document.getElementById("m12").value.toLowerCase() +
             document.getElementById("m13").value.toLowerCase()
             ;
-  console.log(passphrase);
 
   var yourAddress = document.getElementById("yourAccount").value
 
-	sendIgnis("https://cyptocrosswords.ml/nxt", (250*100000000), yourAddress, passphrase);
+	sendIgnis("https://cyptocrosswords.ml/nxt", 25000000000, yourAddress, passphrase);
 }
