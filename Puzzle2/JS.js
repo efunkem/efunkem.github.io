@@ -29,7 +29,7 @@ function sendIgnis(nodeurl, amountNQT, recipient, passphrase){
   console.log(ardorjs.secretPhraseToPublicKey(passphrase));
 
   var query = {
-    chain:1,
+    chain:2,
     recipient:recipient,
     amountNQT:amountNQT,
     feeNQT:-1,
