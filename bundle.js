@@ -22412,7 +22412,7 @@ const config = {
 function getAmount(){
     axios.get("https://cyptocrosswords.ml/nxt?requestType=getBalance&chain=1&account=ARDOR-2KDL-MLEX-2YQX-6978Z", config)
     .then(function(response){
-        var rewardAmount = ((response.data.balanceNQT)/100000000).toFixed(0);
+        var rewardAmount = (((response.data.balanceNQT)/100000000)-2).toFixed(0);
         if (rewardAmount <= 10){
         	reward.textContent = "Prize Already Claimed!"
         } else {
