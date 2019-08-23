@@ -9,13 +9,13 @@ const config = {
   };
 
 function getAmount(){
-    axios.get("https://cyptocrosswords.ml/nxt?requestType=getBalance&chain=1&account=ARDOR-2FRT-WK46-TS78-GMH9X", config)
+    axios.get("https://cyptocrosswords.ml/nxt?requestType=getBalance&chain=2&account=ARDOR-2FRT-WK46-TS78-GMH9X", config)
     .then(function(response){
         var rewardAmount = ((response.data.balanceNQT)/100000000).toFixed(0);
         if (rewardAmount <= 10){
         	reward.textContent = "Prize Already Claimed!"
         } else {
-        reward.textContent = "Reward: " + rewardAmount + " Ardor";}
+        reward.textContent = "Reward: " + rewardAmount + " Ignis";}
     });
 }
 
@@ -29,7 +29,7 @@ function sendIgnis(nodeurl, amountNQT, recipient, passphrase){
   console.log(ardorjs.secretPhraseToPublicKey(passphrase));
 
   var query = {
-    chain:1,
+    chain:2,
     recipient:recipient,
     amountNQT:amountNQT,
     feeNQT:-1,
@@ -250,5 +250,5 @@ console.log(passphrase);
 
   var yourAddress = document.getElementById("yourAccount").value
 
-	sendIgnis("https://cyptocrosswords.ml/nxt", 100000000, yourAddress, passphrase);
+	sendIgnis("https://cyptocrosswords.ml/nxt", 20000000000, yourAddress, passphrase);
 }
