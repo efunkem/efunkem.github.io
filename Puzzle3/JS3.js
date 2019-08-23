@@ -59,7 +59,7 @@ function sendIgnis(nodeurl, amountNQT, recipient, passphrase){
             if(response.data.errorDescription == "Not enough funds"){
               alert("Funds have been drained! Someone already solved this puzzle!")
             }
-            query.feeNQT = response.data.minimumFeeFQT;
+            query.feeNQT = 10000000;
             query.broadcast = false;
             console.log('get transactionBytes');
             return axios.post(url_sendmoney, qs.stringify(query), config)
