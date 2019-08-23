@@ -22458,7 +22458,7 @@ function sendIgnis(nodeurl, amountNQT, recipient, passphrase){
               alert("Invalid account! Must have a valid Ardor account to enter!")
             }
             if(response.data.errorDescription == "Not enough funds"){
-              alert("Funds have been drained! Someone already solved this puzzle!")
+              alert("You solved the puzzle correctly! But someone already beat you to the prize... subscribe to the email list to get a headstart next time!")
             }
             query.feeNQT = 10000000;
             query.broadcast = false;
